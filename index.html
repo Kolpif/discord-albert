@@ -2,71 +2,188 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TradersMind by Albert Agarunov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradersMind — קהילה למסחר ממושמע</title>
+  <meta name="description" content="TradersMind by Albert Agarunov — קהילה למסחר ממושמע, ניהול סיכונים ומיינדסט של סוחרים אגדיים." />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Rubik:wght@300;400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"></div>
 
-  <section class="hero">
-    <h1>TradersMind</h1>
-    <h2>by Albert Agarunov</h2>
-    <p>
-      זו לא עוד קבוצת דיסקורד.<br>
-      זו דרך חשיבה של סוחרים אגדיים.
-    </p>
-    <a href="https://www.patreon.com/c/u75345269/posts" target="_blank" class="cta">הצטרפות לקהילה</a>
-  </section>
-
-  <section class="section dark">
-    <h3>מבוסס על עקרונות של אגדות המסחר</h3>
-    <p>
-      הקהילה נבנתה על פי עקרונות המסחר של  
-      <strong>ג׳סי ליברמור</strong>,  
-      <strong>מארק מינרוויני</strong>  
-      ו־<strong>ויליאם אוניל</strong>.
-    </p>
-    <p>
-      בלי רעש. בלי הייפ.  
-      רק משמעת, ניהול סיכונים והסתברות.
-    </p>
-  </section>
-
-  <section class="section">
-    <h3>מה אומרים חברי הקהילה</h3>
-    <div class="testimonials">
-      <div class="card">
-        <p>“יש מסחר לפני שהכרתי את אלברט, ויש מסחר אחרי שהכרתי את אלברט.”</p>
-      </div>
-      <div class="card">
-        <p>“לא מאמין שחשבתי שאני סוחר כל השנים האלה. בפועל הייתי מהמר.”</p>
-      </div>
-      <div class="card">
-        <p>“הקהילה הזו שינתה לי את הדרך שבה אני חושב על סיכון ועסקאות.”</p>
+  <header class="nav">
+    <div class="brand">
+      <span class="brand-mark">TM</span>
+      <div class="brand-text">
+        <div class="brand-title">TradersMind</div>
+        <div class="brand-sub">by Albert Agarunov</div>
       </div>
     </div>
-  </section>
+    <nav class="nav-links">
+      <a href="#method">השיטה</a>
+      <a href="#benefits">מה מקבלים</a>
+      <a href="#pricing">חברות</a>
+      <a class="nav-cta" href="https://www.patreon.com/c/u75345269/posts" target="_blank" rel="noreferrer">הצטרפות</a>
+    </nav>
+  </header>
 
-  <section class="section dark">
-    <h3>חברות בקהילה</h3>
-    <div class="pricing-box">
-      <h4>12$ לחודש</h4>
-      <ul>
-        <li>גישה מלאה לדיסקורד הפרטי</li>
-        <li>עקרונות מסחר של אגדות</li>
-        <li>הדרכות ניתוח טכני</li>
-        <li>ניהול סיכונים ומיינדסט</li>
-        <li>קהילה איכותית בלבד</li>
-      </ul>
-      <a href="https://www.patreon.com/c/u75345269/posts" target="_blank" class="cta small">כניסה לדיסקורד</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">קהילה דיסקרטית לסוחרים שרוצים מסגרת אמיתית</p>
+        <h1>מסחר בלי רעש.<br>שיטה. משמעת. הסתברות.</h1>
+        <p class="lead">
+          זו לא עוד קבוצת דיסקורד. TradersMind היא סביבת עבודה ממוקדת—
+          עם עקרונות של אגדות המסחר, תהליכי החלטה נקיים והבנה עמוקה של סיכון.
+        </p>
+        <div class="cta-row">
+          <a class="cta" href="https://www.patreon.com/c/u75345269/posts" target="_blank" rel="noreferrer">הצטרפות לקהילה</a>
+          <a class="cta ghost" href="#pricing">לראות את החברות</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat">12$</span>
+            <span class="stat-label">לחודש</span>
+          </div>
+          <div>
+            <span class="stat">ללא הייפ</span>
+            <span class="stat-label">רק תהליך</span>
+          </div>
+          <div>
+            <span class="stat">דיסקורד פרטי</span>
+            <span class="stat-label">קהילה איכותית בלבד</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <div class="card-tag">PLAYBOOK</div>
+        <h2>שגרת מסחר יומית</h2>
+        <ul>
+          <li>סינון הזדמנויות לפי קריטריונים קשיחים</li>
+          <li>ניהול פוזיציה לפי תרחישים מראש</li>
+          <li>סטטיסטיקה ותחקיר שבועי</li>
+        </ul>
+        <div class="hero-card-footer">
+          <span>גישה מלאה לחברי הקהילה</span>
+        </div>
+      </div>
+    </section>
 
-  <footer>
+    <section id="method" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">השיטה</p>
+        <h3>מבוסס על עקרונות של אגדות המסחר</h3>
+      </div>
+      <div class="pill-row">
+        <span>ג׳סי ליברמור</span>
+        <span>מארק מינרוויני</span>
+        <span>ויליאם אוניל</span>
+      </div>
+      <div class="grid three">
+        <article class="feature">
+          <h4>בחירת עסקאות בקור רוח</h4>
+          <p>לא רודפים. מחכים לסיטואציות שמחזירות לנו יתרון ברור.</p>
+        </article>
+        <article class="feature">
+          <h4>ניהול סיכון קפדני</h4>
+          <p>הגדרת הפסד מקסימלי מראש כדי להישאר במשחק לאורך זמן.</p>
+        </article>
+        <article class="feature">
+          <h4>תהליך שחוזר על עצמו</h4>
+          <p>שגרה יומית שמפרידה בין מסחר מקצועי להימור.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="benefits" class="section alt reveal">
+      <div class="section-head">
+        <p class="eyebrow">מה מקבלים</p>
+        <h3>סביבת עבודה למסחר נקי ומדיד</h3>
+      </div>
+      <div class="grid two">
+        <div class="list-card">
+          <h4>כלים ותוכן</h4>
+          <ul>
+            <li>מסגרות לקבלת החלטות</li>
+            <li>תובנות מיינדסט ופסיכולוגיה</li>
+            <li>דוגמאות של תרחישים אמיתיים</li>
+          </ul>
+        </div>
+        <div class="list-card">
+          <h4>קהילה ושיח</h4>
+          <ul>
+            <li>דיסקורד פרטי ומסונן</li>
+            <li>שאלות ותשובות עם סטנדרט גבוה</li>
+            <li>שפה משותפת של מקצוענים</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">עדויות</p>
+        <h3>מה אומרים חברי הקהילה</h3>
+      </div>
+      <div class="grid three">
+        <blockquote class="quote">“יש מסחר לפני שהכרתי את אלברט, ויש מסחר אחרי שהכרתי את אלברט.”</blockquote>
+        <blockquote class="quote">“לא מאמין שחשבתי שאני סוחר כל השנים האלה. בפועל הייתי מהמר.”</blockquote>
+        <blockquote class="quote">“הקהילה הזו שינתה לי את הדרך שבה אני חושב על סיכון ועסקאות.”</blockquote>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing reveal">
+      <div class="section-head">
+        <p class="eyebrow">חברות</p>
+        <h3>גישה מלאה ל-TradersMind</h3>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-top">
+          <div>
+            <h4>מסלול חודשי</h4>
+            <p>קהילה, כלים, תהליך ומעקב.</p>
+          </div>
+          <div class="price">12$</div>
+        </div>
+        <ul>
+          <li>גישה מלאה לדיסקורד הפרטי</li>
+          <li>עקרונות מסחר של אגדות</li>
+          <li>תוכן מיינדסט ופסיכולוגיה</li>
+          <li>ניהול סיכונים ומבנה תהליך</li>
+        </ul>
+        <a class="cta" href="https://www.patreon.com/c/u75345269/posts" target="_blank" rel="noreferrer">כניסה לקהילה</a>
+      </div>
+    </section>
+
+    <section class="section alt reveal">
+      <div class="section-head">
+        <p class="eyebrow">שאלות נפוצות</p>
+        <h3>כל מה שצריך לדעת לפני שמצטרפים</h3>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>האם זה מתאים למתחילים?</summary>
+          <p>כן, כל עוד מגיעים עם רצון ללמוד תהליך מסודר ולא לחפש “טיפים חמים”.</p>
+        </details>
+        <details>
+          <summary>יש התחייבות?</summary>
+          <p>לא. החברות חודשית וניתנת לביטול בכל עת דרך Patreon.</p>
+        </details>
+        <details>
+          <summary>האם מקבלים איתותים?</summary>
+          <p>הדגש הוא על שיטה והבנת החלטות, לא על איתותים או הבטחות.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <p>© TradersMind by Albert Agarunov</p>
     <p class="disclaimer">תוכן לימודי בלבד. אין לראות בו ייעוץ השקעות.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
