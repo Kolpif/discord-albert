@@ -259,11 +259,15 @@ body{
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 }
 .testimonial-card{
+  appearance:none;
+  border:1px solid rgba(255,255,255,.08);
+  padding:0;
+  cursor:pointer;
   background:linear-gradient(180deg,rgba(20,24,32,.96),rgba(14,18,26,.98));
   border-radius:16px;
   overflow:hidden;
-  border:1px solid rgba(255,255,255,.08);
   box-shadow:var(--shadow);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 .testimonial-card img{
   display:block;
@@ -271,6 +275,77 @@ body{
   height:100%;
   aspect-ratio:3/4;
   object-fit:cover;
+}
+.testimonial-card:hover,
+.testimonial-card:focus-visible{
+  transform:translateY(-4px);
+  border-color:rgba(78,161,255,.4);
+  box-shadow:0 28px 60px rgba(0,0,0,.5);
+}
+.lightbox{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:30;
+}
+.lightbox.open{display:flex}
+.lightbox-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(6,8,12,.8);
+  backdrop-filter:blur(4px);
+}
+.lightbox-content{
+  position:relative;
+  z-index:1;
+  max-width:min(860px,90vw);
+  max-height:85vh;
+  display:grid;
+  align-items:center;
+  justify-items:center;
+}
+.lightbox-image{
+  max-width:100%;
+  max-height:85vh;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:var(--shadow);
+  background:#0b0e12;
+}
+.lightbox-nav,
+.lightbox-close{
+  appearance:none;
+  border:none;
+  background:rgba(18,22,28,.9);
+  color:#fff;
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  cursor:pointer;
+  display:grid;
+  place-items:center;
+  position:absolute;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+  border:1px solid rgba(255,255,255,.12);
+  font-size:1.4rem;
+}
+.lightbox-close{
+  top:-18px;
+  right:-18px;
+  font-size:1.2rem;
+}
+.lightbox-nav.prev{left:-22px}
+.lightbox-nav.next{right:-22px}
+.lightbox-counter{
+  margin-top:14px;
+  font-size:.9rem;
+  color:var(--muted);
+  background:rgba(12,16,22,.85);
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.08);
 }
 .legend-title{
   display:flex;

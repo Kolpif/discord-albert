@@ -229,21 +229,30 @@
         <blockquote class="quote">“הקהילה הזו שינתה לי את הדרך שבה אני חושב על סיכון ועסקאות.”</blockquote>
       </div>
       <div class="testimonial-gallery">
-        <figure class="testimonial-card">
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 1">
           <img src="assets/testimonials/discord-01.jpeg" alt="המלצה מתוך דיסקורד 1" loading="lazy" />
-        </figure>
-        <figure class="testimonial-card">
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 2">
           <img src="assets/testimonials/discord-02.jpeg" alt="המלצה מתוך דיסקורד 2" loading="lazy" />
-        </figure>
-        <figure class="testimonial-card">
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 3">
           <img src="assets/testimonials/discord-03.jpeg" alt="המלצה מתוך דיסקורד 3" loading="lazy" />
-        </figure>
-        <figure class="testimonial-card">
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 4">
           <img src="assets/testimonials/discord-04.jpeg" alt="המלצה מתוך דיסקורד 4" loading="lazy" />
-        </figure>
-        <figure class="testimonial-card">
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 5">
           <img src="assets/testimonials/discord-05.jpeg" alt="המלצה מתוך דיסקורד 5" loading="lazy" />
-        </figure>
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 6">
+          <img src="assets/testimonials/discord-06.jpeg" alt="המלצה מתוך דיסקורד 6" loading="lazy" />
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 7">
+          <img src="assets/testimonials/discord-07.jpeg" alt="המלצה מתוך דיסקורד 7" loading="lazy" />
+        </button>
+        <button class="testimonial-card" type="button" aria-label="פתח המלצה 8">
+          <img src="assets/testimonials/discord-08.jpeg" alt="המלצה מתוך דיסקורד 8" loading="lazy" />
+        </button>
       </div>
     </section>
 
@@ -301,6 +310,17 @@
     <p>© TradersMind by Albert Agarunov</p>
     <p class="disclaimer">תוכן לימודי בלבד. אין לראות בו ייעוץ השקעות.</p>
   </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="תמונות המלצות">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="סגור">×</button>
+      <button class="lightbox-nav prev" type="button" data-lightbox-prev aria-label="קודם">‹</button>
+      <img class="lightbox-image" alt="" />
+      <button class="lightbox-nav next" type="button" data-lightbox-next aria-label="הבא">›</button>
+      <div class="lightbox-counter" aria-live="polite">1 / 1</div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
